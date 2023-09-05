@@ -1,0 +1,44 @@
+#error-page {
+    width          : 100vw;
+    height         : 100vh;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    gap            : 50px;
+}
+
+.voltar {
+    outline         : 0;
+    border-radius   : 10px;
+    background-color: #fff;
+    border          : solid 1px #dfdfdf;
+    box-shadow      : 0 3px 5px #dfdfdf;
+    cursor          : pointer;
+    text-decoration : none;
+    color           : #000;
+    padding         : 10px 20px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-wrap       : wrap;
+    gap             : 3px;
+}
+
+.voltar .arrow-move {
+    animation: move 1s infinite;
+}
+
+@keyframes move {
+    from {
+        translate: 0px;
+    }
+
+    to {
+        translate: -10px;
+    }
+}
+
+#error-page p {
+    text-align: center;
+}

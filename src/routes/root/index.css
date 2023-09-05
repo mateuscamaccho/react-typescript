@@ -1,0 +1,73 @@
+main {
+    width           : 100vw;
+    height          : 100vh;
+    /* background-color: red; */
+    /* overflow     : hidden; */
+    display         : flex;
+}
+
+.sidebar {
+    width           : 20vw;
+    min-width       : 300px;
+    background-color: #f7f7f7;
+    height          : 100vh;
+    border-right    : 1px solid #ebebeb;
+}
+
+.sidebar .search-box {
+    /* background-color: red; */
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border-bottom  : 1px solid #e5e5e5;
+    padding        : 20px 40px;
+    gap            : 5px;
+}
+
+.sidebar .search-box form input {
+    height          : 40px;
+    padding         : 3px 25px;
+    border-radius   : 10px;
+    background-color: #fff;
+    border          : solid 1px #dfdfdf;
+    box-shadow      : 0 3px 5px #dfdfdf;
+    cursor          : text;
+    outline         : 0;
+}
+
+.sidebar .search-box form button {
+    outline         : 0;
+    height          : 40px;
+    border-radius   : 10px;
+    background-color: #fff;
+    width           : 60px;
+    border          : solid 1px #dfdfdf;
+    box-shadow      : 0 3px 5px #dfdfdf;
+    color           : #5c90e5;
+    cursor          : pointer;
+}
+
+.sidebar .nav {
+    width  : 100%;
+    padding: 20px 40px;
+}
+
+.sidebar .nav ul {
+    list-style: none;
+}
+
+.sidebar .nav ul li {
+    margin: 20px 0px;
+}
+
+.sidebar .nav ul li a {
+    text-decoration: none;
+    color          : #000;
+}
+
+#detail>* {
+    /* background-color: blue; */
+    width           : 80vw;
+    padding         : 30px;
+}
