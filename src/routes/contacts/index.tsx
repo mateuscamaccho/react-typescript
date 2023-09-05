@@ -1,9 +1,10 @@
-import { Form } from "react-router-dom";
+import { Form, useParams } from "react-router-dom";
 import React, { useState } from 'react';
 import './index.css';
 import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
 
 export default function Contact() {
+    const { contactId } = useParams();
     interface ConfirmationModalProps {
         message: string;
         onConfirm: () => void;
@@ -50,6 +51,12 @@ export default function Contact() {
         notes: "Tempor fugiat consequat id et voluptate. Aliquip pariatur aute voluptate esse in et. Anim ipsum excepteur ex cupidatat aliquip excepteur aute.",
         favorite: true,
     };
+
+    const tt = contactId === "1" ? contact.avatar = "https://placekitten.com/g/200/200" :
+        contactId === "2" ? contact.avatar = "https://placekitten.com/g/300/300" :
+            contactId === "3" ? contact.avatar = "https://placekitten.com/g/400/400" : null
+
+
 
     return (
         <div id="contact" className="contact">

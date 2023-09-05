@@ -1,18 +1,18 @@
 import { Link, Outlet } from "react-router-dom";
-// import { getContacts } from "../contacts/index";
 import './index.css';
-
-
-export async function loader() {
-    //   const contacts = await getContacts();
-    //   return { contacts };
-}
+import { MdOutlinePerson } from 'react-icons/md'
+import { RxHamburgerMenu } from 'react-icons/rx'
 
 export default function Root() {
     return (
         <>
             <main>
                 <div className='sidebar' id="sidebar">
+                    <div className='search-box'>
+                        <button className="star-btn">
+                            <RxHamburgerMenu size={30} />
+                        </button>
+                    </div>
                     <div className='search-box'>
                         <form id="search-form" role="search">
                             <input
@@ -39,11 +39,24 @@ export default function Root() {
                     <nav className='nav'>
                         <ul>
                             <li>
-                                <Link to={`contacts/1`}>Your Name</Link>
+                                <Link to={`contacts/1`}>
+                                    <MdOutlinePerson size={30} />
+                                    Your Name
+                                </Link>
                             </li>
                             <li>
-                                <Link to={`contacts/2`}>Your Name</Link>
+                                <Link to={`contacts/2`}>
+                                    <MdOutlinePerson size={30} />
+                                    Your Name
+                                </Link>
                             </li>
+                            <li>
+                                <Link to={`contacts/3`}>
+                                    <MdOutlinePerson size={30} />
+                                    Your Name
+                                </Link>
+                            </li>
+
                             <li>
                                 <Link to={`/f`}>Not found page!</Link>
                             </li>
